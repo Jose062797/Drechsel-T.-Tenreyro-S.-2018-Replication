@@ -1,0 +1,18 @@
+Parameter,Description,Prior,Mean,Std. Dev.
+n (xi),Sensitivity of spread to commodity prices,Normal,-0.199,0.045
+x (psi),Elasticity of debt in spread,Normal,2.8,0.5
+q¹_p̃ (rhoptil1),Commodity price AR(2) - lag 1,Beta,0.8,0.1
+-q²_p̃ (rhoptil2),Commodity price AR(2) - lag 2 (magnitude),Beta,0.15,0.1
+σ_p̃ (sigptil),Std. dev. commodity price shock,Inv-Gamma,0.05,2
+q_a (rhoa),Persistence of productivity shock (final),Beta,0.5,0.2
+q_ã (rhoatil),Persistence of productivity shock (comm.),Beta,0.5,0.2
+q_g (rhog),Persistence of growth shock,Beta,0.5,0.2
+q_s (rhos),Persistence of government spending shock,Beta,0.5,0.2
+q_m (rhom),Persistence of preference shock,Beta,0.5,0.2
+q_l (rhol),Persistence of interest rate risk shock,Beta,0.5,0.2
+σ_a (siga),Std. dev. productivity shock (final),Inv-Gamma,0.05,2
+σ_ã (sigatil),Std. dev. productivity shock (comm.),Inv-Gamma,0.05,2
+σ_g (sigg),Std. dev. growth shock,Inv-Gamma,0.05,2
+σ_s (sigs),Std. dev. government spending shock,Inv-Gamma,0.05,2
+σ_m (sigm),Std. dev. preference shock,Inv-Gamma,0.05,2
+σ_l (sigl),Std. dev. interest rate risk shock,Inv-Gamma,0.05,2

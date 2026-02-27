@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\caption{Estimated Parameters and Priors}
+\label{tab:table4_priors}
+\begin{tabular}{llccc}
+\hline\hline
+Parameter & Description & Prior & Mean & Std. Dev. \\
+\hline
+\multicolumn{5}{l}{\textit{Structural parameters}} \\
+$n$, xi)$ & Sensitivity of spread to commodity prices & Normal & -0.199 & 0.045 \\
+$x$, psi)$ & Elasticity of debt in spread & Normal & 2.800 & 0.500 \\
+\\
+\multicolumn{5}{l}{\textit{Commodity price process (AR(2))}} \\
+$q¹_p̃$, rhoptil1)$ & Commodity price AR(2) - lag 1 & Beta & 0.800 & 0.20 \\
+$-q²_p̃$, rhoptil2)$ & Commodity price AR(2) - lag 2 (magnitude) & Beta & 0.150 & 0.10 \\
+$σ_p̃$, sigptil)$ & Std. dev. commodity price shock & Inv-Gamma & 0.050 & 2.00 \\
+\\
+\multicolumn{5}{l}{\textit{Persistence parameters ($q_i$)}} \\
+$q_a$, rhoa)$ & Persistence of productivity shock (final) & Beta & 0.50 & 0.20 \\
+$q_ã$, rhoatil)$ & Persistence of productivity shock (comm.) & Beta & 0.50 & 0.20 \\
+$q_g$, rhog)$ & Persistence of growth shock & Beta & 0.50 & 0.20 \\
+$q_s$, rhos)$ & Persistence of government spending shock & Beta & 0.50 & 0.20 \\
+$q_m$, rhom)$ & Persistence of preference shock & Beta & 0.50 & 0.20 \\
+$q_l$, rhol)$ & Persistence of interest rate risk shock & Beta & 0.50 & 0.20 \\
+\\
+\multicolumn{5}{l}{\textit{Volatility parameters ($\sigma_i$)}} \\
+$σ_a$, siga)$ & Std. dev. productivity shock (final) & Inv-Gamma & 0.05 & 2 \\
+$σ_ã$, sigatil)$ & Std. dev. productivity shock (comm.) & Inv-Gamma & 0.05 & 2 \\
+$σ_g$, sigg)$ & Std. dev. growth shock & Inv-Gamma & 0.05 & 2 \\
+$σ_s$, sigs)$ & Std. dev. government spending shock & Inv-Gamma & 0.05 & 2 \\
+$σ_m$, sigm)$ & Std. dev. preference shock & Inv-Gamma & 0.05 & 2 \\
+$σ_l$, sigl)$ & Std. dev. interest rate risk shock & Inv-Gamma & 0.05 & 2 \\
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Notes: Prior distributions for Bayesian estimation. Beta priors ensure persistence parameters are bounded in [0,1]. Inverse-Gamma priors ensure shock volatilities are strictly positive. The parameter $-q^2_{\tilde{p}}$ is estimated as a positive magnitude; the model uses the negative coefficient in the AR(2) process.
+\end{tablenotes}
+\end{table}
